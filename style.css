@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color: black;
+}
+
+.calc {
+    width: 600px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.input-result {
+    min-height: 50px;
+    font-size: 30px;
+    color: gray;
+}
+
+.input-control {
+    text-align: right;
+    border: none;
+    width: 100%;
+    font-size: 44px;
+    color: black;
+}
+
+.keyboard {
+    padding: 20px 0;
+}
+
+.keyboard__row {}
+
+.keyboard__row:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.keyboard__items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.keyboard__item {
+    box-shadow: 0 4px 2px -2px gray;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(234, 240, 245);
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.keyboard__item:active {
+    box-shadow: inset 1px 1px 10px -1px
+}
+
+.key-colored {
+    background-color: #c5d0e6;
+}
+
+.clear {
+    color: rgb(233, 155, 162);
+    background-color: rgb(248, 236, 238);
+}
+
+.operator {
+    color: white;
+    background-color: rgb(255, 150, 1);
+}
+
+.complete {
+    flex: 0 1 150px;
+    color: white;
+    background-color: rgb(45, 201, 114);
+}

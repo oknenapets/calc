@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="display">
+            <output class="input-result"></output>
+            <input type="text" class="input-control" placeholder="0" readonly>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard__row">
+                <div class="keyboard__items ">
+                    <button type="button" class="keyboard__item key-colored key-power" data-fnc="pow">x<sup>y</sup></button>
+                    <button type="button" class="keyboard__item key-colored key-factorial">x!</button>
+                    <button type="button" class="keyboard__item key-colored key-plusm">&plusmn;</button>
+                    <button type="button" class="keyboard__item clear">C</button>
+                    <button type="button" class="keyboard__item key-value">(</button>
+                    <button type="button" class="keyboard__item key-value">)</button>
+                    <button type="button" class="keyboard__item key-value operator">/</button>
+                </div>
+            </div>
+            <div class="keyboard__row">
+                <div class="keyboard__items ">
+                    <button type="button" class="keyboard__item key-colored  key-function" data-fnc="asin">asin</button>
+                    <button type="button" class="keyboard__item key-colored  key-function" data-fnc="sin">sin</button>
+                    <button type="button" class="keyboard__item key-colored  key-hyperbole">1/x</button>
+                    <button type="button" class="keyboard__item key-value">7</button>
+                    <button type="button" class="keyboard__item key-value">8</button>
+                    <button type="button" class="keyboard__item key-value">9</button>
+                    <button type="button" class="keyboard__item key-value operator">*</button>
+                </div>
+            </div>
+            <div class="keyboard__row">
+                <div class="keyboard__items ">
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="acos">acos</button>
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="cos">cos</button>
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="sqrt">&radic;</button>
+                    <button type="button" class="keyboard__item key-value">4</button>
+                    <button type="button" class="keyboard__item key-value">5</button>
+                    <button type="button" class="keyboard__item key-value">6</button>
+                    <button type="button" class="keyboard__item key-value operator">-</button>
+                </div>
+            </div>
+            <div class="keyboard__row">
+                <div class="keyboard__items ">
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="atan">atan</button>
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="tan">tan</button>
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="log">ln</button>
+                    <button type="button" class="keyboard__item key-value">1</button>
+                    <button type="button" class="keyboard__item key-value">2</button>
+                    <button type="button" class="keyboard__item key-value">3</button>
+                    <button type="button" class="keyboard__item key-value operator">+</button>
+                </div>
+            </div>
+            <div class="keyboard__row">
+                <div class="keyboard__items ">
+                    <button type="button" class="keyboard__item key-colored key-function" data-fnc="log10">lg</button>
+                    <button type="button" class="keyboard__item key-colored key-const" data-fnc="PI">&pi;</button>
+                    <button type="button" class="keyboard__item key-colored key-const"data-fnc="E">e</button>
+                    <button type="button" class="keyboard__item key-value">0</button>
+                    <button type="button" class="keyboard__item key-value">.</button>
+                    <button type="button" class="keyboard__item complete">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
